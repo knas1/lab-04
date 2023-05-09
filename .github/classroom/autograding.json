@@ -1,13 +1,13 @@
 {
   "tests": [
     {
-      "name": "Lab3Test",
-      "setup": "",
+      "name": "Lab4Test",
+      "setup": "mvn compile",
       "run": "mvn test",
       "input": "",
       "output": "",
       "comparison": "included",
-      "timeout": 5,
+      "timeout": 10,
       "points": 100
     }
   ]
