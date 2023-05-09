@@ -10,7 +10,7 @@ public class Archer implements Characters{
             throw new IllegalArgumentException("Character must have a name");
         }
         this.name=name;
-        this.avatar = new Avatar(SkinTone.FAIR, HairType.LONG_STRAIGHT, HairColor.BLOND, BodyType.FIT, FacialFeatures.CLEAN_SHAVEN);
+        this.avatar = new Avatar.Builder(SkinTone.FAIR).withHairType(HairType.SHORT).withHairColor(HairColor.BROWN).withBodyType(BodyType.SKINNY).withFacialFeatures(FacialFeatures.LIGHT_BEARD).build();
     }
 
     public String getName(){
